@@ -1,92 +1,54 @@
 .container {
   margin: 0 auto;
-  max-width: 800px;
-  width: 80%;
-}
-
-main,
-footer,
-.nav-container {
-  display: block;
-  margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   width: 80%;
 }
 
 .nav {
-  box-shadow: 0 2px 2px -2px $shadow-color;
-  overflow: auto;
+  border-bottom: 1px solid $white-2;
+  padding: 1.5rem 1.25rem;
+  h1 {
+    margin-bottom: 0;
+  }
 
   &-container {
-    margin: 1rem auto;
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &-title {
-    @include transition(all .2s ease-out);
-    color: $default-color;
-    display: inline-block;
     margin: 0;
-    padding-right: .2rem;
-
-    &:hover,
-    &:focus {
-      opacity: .6;
-    }
   }
-
-  ul {
-    list-style-type: none;
-    margin: 1rem 0 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  li {
-    @include transition(all .2s ease-out);
-    color: $default-color;
-    display: inline-block;
-    opacity: .6;
-    padding: 0 2rem 0 0;
-
-    &:last-child {
-      padding-right: 0;
-    }
-
-    &:hover,
-    &:focus {
-      opacity: 1;
-    }
-  }
-
-  a {
-    color: $default-color;
-    font-family: $sans-serif;
-  }
+  // li {
+  //   font-size: 1.5rem;
+  //   font-weight: 500;
+  //   margin-bottom: 0;
+  // }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .nav {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2rem;
+    width: 30%;
+    border-right: 1px solid $white-2;
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
     &-container {
-      text-align: left;
-    }
-
-    ul {
-      bottom: 0;
-      position: absolute;
-      right: 0;
+      height: 100%;
+      flex-direction: column;
+      align-items: flex-start
     }
   }
-}
-
-footer {
-  font-family: $serif-secondary;
-  padding: 2rem 0;
-  text-align: center;
-
-  span {
-    color: $default-color;
-    font-size: .8rem;
+  main {
+    width: 70%;
+    margin-left: 30%;
   }
+  
 }
+

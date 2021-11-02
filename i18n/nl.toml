@@ -1,3 +1,9 @@
+[posts]
+other = "Artikelen"
+
+[about]
+other = "Over"
+
 [writtenBy]
 other = "Geschreven door"
 
@@ -5,7 +11,7 @@ other = "Geschreven door"
 other = "op"
 
 [generator]
-other = "Gemaakt met <a href='https://gohugo.io'>Hugo</a> en thema <a href='https://github.com/EmielH/tale-hugo/'>Tale</a>."
+other = "Gemaakt met  <a href='https://forestry.io'>Forestry</a> & <a href='https://gohugo.io'>Hugo</a> en thema <a href='https://github.com/EmielH/tale-hugo/'>Tale</a>."
 
 [publishdate]
 other = "{{ .PublishDate.Day }} {{ index $.Site.Data.months_nl (printf \"%d\" .PublishDate.Month) }} {{ .PublishDate.Year }}"
