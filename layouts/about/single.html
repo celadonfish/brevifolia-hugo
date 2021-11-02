@@ -2,7 +2,11 @@
 
 <main>
 	<div class="info__post">
+		<h1>Info</h1>
 		{{ .Content }}
+		<h2>
+			Links:
+		</h2>
 		<ul>
 				<!--
 				<li>
@@ -17,11 +21,15 @@
 						</a>
 					</h2>
 				</li>
-				<li>
 				-->
-					<h2>
-						<a href="https://github.com/{{.Params.contact_info.github_handle }}">Github: {{.Params.contact_info.github_handle }}</a>
-					</h2>
+				<li>
+					<a href="https://github.com/{{.Params.contact_info.github_handle }}">Github: {{.Params.contact_info.github_handle }}</a>
+				</li>
+				<li>
+						<a href="{{.Params.source_info.website}}">Website source</a>
+				</li>
+				<li>
+						<a href="{{.Params.source_info.theme}}">Theme source</a>
 				</li>
 			</ul>
 	</div>
